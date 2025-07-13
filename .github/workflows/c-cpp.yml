@@ -1,0 +1,19 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "check-assignment-1" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: install gmock
+      run: sudo apt-get -y install libgmock-dev
+    - name: make
+      run: make
+    - name: make check
+      run: ./assignment_tests
