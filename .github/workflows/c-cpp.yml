@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: make
     - name: make check
-      run: ./assignment_tests
+      run: make check
