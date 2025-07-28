@@ -44,7 +44,7 @@ public:
         } catch (const ExceptionPropertyNotFound &e) {
             throw ExceptionCantWriteProperty {"angle"};
         }
-    }
+    } 
 
 private:
 
