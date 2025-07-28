@@ -3,7 +3,7 @@
 
 namespace game {
 
-class ExceptionPropertyNotFound : public std::exception{
+class ExceptionPropertyNotFound : public std::exception {
 
     /// Forbids the default ctor
     ExceptionPropertyNotFound() = delete;
