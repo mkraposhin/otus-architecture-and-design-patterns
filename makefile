@@ -25,6 +25,9 @@ INC_DEPS := translating_object_adapter.hxx \
 ./tests/assignment_tests.o: ./tests/assignment_tests.cxx $(INC_DEPS)
 	g++ -I. ./tests/assignment_tests.cxx -c -o./tests/assignment_tests.o
 
+check: assignment_tests
+	./assignment_tests
+
 clean:
 	rm -rf *.o tests/*.o assignment_tests
 
