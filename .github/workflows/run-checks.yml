@@ -2,7 +2,7 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ "check-assignment-1" ]
+    branches: [ "check-assignment-2" ]
 
 jobs:
   build:
